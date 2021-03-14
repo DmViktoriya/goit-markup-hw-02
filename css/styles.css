@@ -1,0 +1,77 @@
+:root{
+    /* Основной цвет текста */
+    --primary-text-color: #757575;
+    /* Цвет заголовка */
+    --title-text-color: #212121;
+    /* Цвет акцента */
+    --accent-color: #2196F3;
+    /* Цвет фона */
+    --primary-bg-color: #E5E5E5;
+    --secondary-bg-color:#F5F4FA;
+    /* Цвет логотипа */
+    --logo-color: #000000;
+    --hero-color: #ffffff;
+}
+/* Логотип */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+    text-decoration: none;
+}
+.logo-web{
+    color: var(--accent-color);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+/* Меню */
+.nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.nav:hover,
+.nav:focus {
+    color: var(--accent-color);
+}
+ul{
+    text-decoration: none;
+}
+/* Кнопки */
+.button{
+    font-family: inherit;
+    cursor: pointer;
+}
+/* Герой */
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+/* Особенности */
+.feature-list {
+    text-decoration: none;  
+}
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
