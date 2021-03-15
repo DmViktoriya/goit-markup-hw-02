@@ -11,11 +11,27 @@
     /* Цвет логотипа */
     --logo-color: #000000;
     --hero-color: #ffffff;
+    /* Цвета для кнопок */
+    --button-sleep: #F5F4FA;
+    --button-active: #2196F3;
+    --button-active-hero: #188CE8;
+    --button-letters: #212121;
+    --button-letters-active: #ffffff;
+    /* Цвета для подвала */
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+ul {
+    list-style: none;
 }
 /* Логотип */
 .logo{
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -25,12 +41,6 @@
 }
 .logo-web{
     color: var(--accent-color);
-}
-body{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
 }
 /* Меню */
 .nav{
@@ -45,13 +55,58 @@ body{
 .nav:focus {
     color: var(--accent-color);
 }
-ul{
+.current{
+    color: var(--accent-color);
+}
+/* Контакты-ссылки почта и телефон */
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
     text-decoration: none;
+}
+.contact:hover,
+.contact:focus,
+.contact:active {
+    color: var(--accent-color);
 }
 /* Кнопки */
 .button{
     font-family: inherit;
     cursor: pointer;
+}
+.nav-portfolio .button {     
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background: var(--button-sleep);
+    color: var(--button-letters);
+}
+.nav-portfolio .button:hover,
+.nav-portfolio .button:focus,
+.nav-portfolio .button:active {
+    background: var(--button-active);
+    color: var(--button-letters-active);
+}
+.hero .button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background: var(--button-active);
+    color: var(--button-letters-active);
+}
+.hero .button:hover,
+.hero .button:focus,
+.hero .button:active {
+    background: var(--button-active-hero);
+    color: var(--button-letters-active);
 }
 /* Герой */
 .hero-title{
@@ -62,6 +117,8 @@ ul{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
+    background-color: gray;
+    /* временный фон для контраста */
 }
 /* Особенности */
 .feature-list {
@@ -74,4 +131,69 @@ ul{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+}
+.feature-list .description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+/* Наша команда */
+.studio-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+/* Портфолио */
+.portfolio-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--button-letters);
+    }
+.portfolio-description {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.portfolio {
+    text-decoration: none;
+}
+/* Подвал */
+.footer-address {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--button-letters-active);
+    background-color: gray;
+    /* временный фон для контраста */
+}
+.footer-contact {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-contact-color);
+    background-color: gray;
+    /* временный фон для контраста */
 }
